@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: 3anany/helloworld
+          image: 3anany/helloworld:vtag
           ports:
             - containerPort: 5000
 
