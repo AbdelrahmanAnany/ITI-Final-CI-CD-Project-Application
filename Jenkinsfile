@@ -27,7 +27,6 @@ pipeline {
                     sh """
                         gcloud auth activate-service-account --key-file="$GCLOUD_CREDS"
                         apt get update && upgrade -y
-                        apt-get install kubectl
                         apt-get install google-cloud-sdk-app-engine-java kubectl -y
                         gcloud container clusters get-credentials private-cluster --zone us-central1-a --project iti-abdelrahman
                         sed -i 's/tag/${BUILD_NUMBER}/g' deployment.yaml
