@@ -22,9 +22,9 @@ pipeline {
 
         stage('CD'){
             steps {
-
                 withCredentials([file(credentialsId: 'gcpCredential', variable: 'GCLOUD_CREDS')]){
                     sh """
+                        apt-get install google-cloud-sdk-gke-gcloud-auth-plugin -y
                         gcloud auth activate-service-account --key-file="$GCLOUD_CREDS"
                         gcloud container clusters get-credentials private-cluster --zone us-central1-a --project iti-abdelrahman
                         sed -i 's/tag/${BUILD_NUMBER}/g' deployment.yaml
