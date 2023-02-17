@@ -6,7 +6,7 @@ pipeline {
         stage('CI'){
             steps {
 
-                withCredentials([usernamePassword(credentialsId: 'Dockerhub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')])            {
+                withCredentials([usernamePassword(credentialsId: 'DockerHub-Credential', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')])            {
 
                 sh """
                     docker build -t 3anany/helloworld:v$BUILD_NUMBER .
