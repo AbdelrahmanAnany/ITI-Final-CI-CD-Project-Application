@@ -8,8 +8,13 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-ENV ENVIRONMENT=DEV HOST=localhost PORT=8000 REDIS_HOST=localhost REDIS_PORT=6379 REDIS_DB=0
+ENV ENVIRONMENT=DEV
+ENV HOST=localhost
+ENV PORT=8080
+ENV REDIS_HOST=localhost
+ENV REDIS_PORT=6379
+ENV REDIS_DB=0
 
-EXPOSE 8000
+EXPOSE 8080
 
 CMD ["python", "hello.py"]

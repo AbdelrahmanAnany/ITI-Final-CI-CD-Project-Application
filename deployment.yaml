@@ -23,7 +23,7 @@ spec:
         - name: python-app
           image: 3anany/helloworld:vtag
           ports:
-            - containerPort: 8000
+            - containerPort: 8080
 
 ---
 apiVersion: v1
@@ -36,8 +36,8 @@ spec:
   selector:
     app: application-server
   ports:
-    - port: 8000
-      targetPort: 8000
+    - port: 8080
+      targetPort: 8080
 
 ---
 apiVersion: apps/v1
