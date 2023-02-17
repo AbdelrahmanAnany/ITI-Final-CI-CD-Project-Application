@@ -1,3 +1,3 @@
-## ITI Final Project Applicatio
+## ITI Final Project Application
 
 ## By Abdelrahman Mahmoud Mahmoud Anany
