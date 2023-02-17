@@ -24,6 +24,9 @@ spec:
           image: 3anany/helloworld:vtag
           ports:
             - containerPort: 8080
+          env:
+            - name: REDIS_HOST
+              value: redis-service
 
 ---
 apiVersion: v1
