@@ -12,7 +12,6 @@ This repository is dependent on the Infrastrucre Repo: https://github.com/Abdelr
 - Apply deployment for the app based on the image
 - Apply LoadBalancer service for the app
 
-
 ### 1. Add Credentials in Jenkins
 - #### DockerHub Credentials
 > Add your DockerHub Credentials `(Username and Password)` and save the id with this value `DockerHub-Credential`.
