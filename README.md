@@ -35,11 +35,17 @@ This repository is dependent on the Infrastrucre Repo: https://github.com/Abdelr
 ### 3. Create CD Pipeline:
 - Deploy Application in GKE
 
+### 4. Add GitHub Webhook:
+
+![webhook](https://github.com/AbdelrahmanAnany/ITI-Final-CI-CD-Project-Application/blob/main/screenshots/webhook.png)
+
+![webhook-success](https://github.com/AbdelrahmanAnany/ITI-Final-CI-CD-Project-Application/blob/main/screenshots/webhook%20success.png)
+
 ## 6th Part: Check the Application
 - get application external ip using the following command in the VM
 
 ```
 kubectl get all -n application
 ```
-- Finally accessing the application
+- Finally access the application
 ![helloworld-application](https://github.com/AbdelrahmanAnany/ITI-Final-CI-CD-Project-Jenkins/blob/main/screenshots/deployed-helloworld-application.png)
