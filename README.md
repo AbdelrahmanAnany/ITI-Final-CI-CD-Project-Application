@@ -37,6 +37,7 @@ This repository is dependent on the Infrastrucre Repo: https://github.com/Abdelr
 
 ## 6th Part: Check the Application
 - get application external ip using the following command in the VM
+
 ```
 kubectl get all -n application
 ```
