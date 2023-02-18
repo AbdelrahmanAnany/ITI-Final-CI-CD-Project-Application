@@ -40,5 +40,5 @@ This repository is dependent on the Infrastrucre Repo: https://github.com/Abdelr
 ```
 kubectl get all -n application
 ```
-- Finally access the application
+- Finally accessing the application
 ![helloworld-application](https://github.com/AbdelrahmanAnany/ITI-Final-CI-CD-Project-Jenkins/blob/main/screenshots/deployed-helloworld-application.png)
